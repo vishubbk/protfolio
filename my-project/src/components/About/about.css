@@ -1,0 +1,212 @@
+/* Global Styles */
+* {
+  font-family: Nunito, sans-serif;
+  box-sizing: border-box;
+}
+
+.about-container {
+ background: #160f32;
+
+}
+
+/* Boxes Section */
+.boxes {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Increased gap for better spacing */
+  height: auto; /* Adjust height to auto */
+  width: 100vw;
+  padding: 20px; /* Added padding for inner spacing */
+  border-radius: 20px; /* Rounded corners for a premium feel */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+.box {
+  border: 2px solid rgba(255, 255, 255, 0.8); /* Light border for contrast */
+  border-radius: 15px; /* Consistent rounded corners */
+  height: auto; /* Allowing boxes to adjust height */
+  flex: 1; /* Allows boxes to grow equally */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px; /* Padding for inner content */
+  transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition */
+}
+
+.box:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+}
+
+.box-1, .box-2, .box-3 {
+  width: 100vw; /* Full width */
+  background-color: transparent; /* No background color */
+}
+
+.box-inner-text {
+  text-align: center; /* Centered text */
+  color: #333; /* Darker text for contrast */
+}
+
+.h2 {
+  font-size: 1.5rem; /* Slightly larger for emphasis */
+  font-weight: bold;
+  color: rgb(0, 128, 255); /* A vibrant blue for a premium feel */
+}
+
+/* Main About Section */
+.main-about {
+  background: #371111;
+  border: 2px double rgb(208, 235, 197);
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  margin: 7% auto;
+  width: 80vw;
+  height: 70vh;
+  padding: 2%;
+  box-shadow: 0 4px 10px rgba(12, 92, 212, 0.2);
+}
+
+.heading-about {
+  flex: 0.95;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 20px;
+  color: rgb(154, 220, 134);
+  font-size: 2.2rem;
+  font-weight: bold;
+}
+
+.text-about {
+  font-weight: lighter;
+  font-size: 1.4rem;
+  color: rgb(164, 214, 230);
+  margin-top: 10px;
+  line-height: 1.5;
+  overflow-y: auto;
+  max-height: 50%;
+}
+
+.img-about {
+  background-image: url('Screenshot_2024-10-25_090015-removebg-preview.png');
+  width: 40%;
+  height: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Media Query for Responsive Design */
+@media (max-width: 768px) {
+  .main-about {
+    margin-top: 30%;
+    flex-direction: column;
+    height: auto;
+  }
+
+  .about-container {
+    background-image: url(bg-about.png);
+    background-size: contain;
+  }
+
+  .heading-about {
+    height: auto;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .text-about {
+    height: auto;
+    overflow-y: auto;
+    max-height: 50%;
+  }
+
+  .img-about {
+    width: 80%;
+    height: 30vh;
+    margin: 20px auto;
+  }
+
+  .boxes {
+    flex-direction: column; /* Stack boxes vertically on smaller screens */
+    height: auto; /* Adjust height for better display */
+  }
+
+  .box {
+    width: 80%; /* Adjust width for mobile */
+    margin: 10px auto; /* Center and add margin */
+  }
+}
+
+/* Services Section */
+.services {
+  background: #412b2b;
+  width: 85vw;
+  overflow: hidden;
+  border: 2px double rgb(208, 235, 197);
+  padding: 30px;
+  border-radius: 50px;
+  margin: 40px auto;
+}
+
+.our-services {
+  display: flex;
+  justify-content: center;
+  font-size: 22px;
+  font-weight: bold;
+  color: rgb(184, 181, 11);
+  margin-bottom: 20px;
+}
+
+.web-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+/* Updated web-dev styles */
+.web-dev {
+  flex: 1 1 calc(33.33% - 20px);
+  height: 30vh;
+  text-align: center;
+  border: 1px solid #d1faf0;
+  padding: 10px;
+  border-radius: 10px;
+  transition: background 0.3s;
+  overflow: hidden;
+}
+
+.web-dev:hover {
+  background: rgb(10, 18, 87);
+}
+
+.h3 {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+p {
+  margin-top: 5px;
+  font-weight: normal;
+  font-size: 0.9em;
+  color: #fae8e8;
+}
+
+/* Lord Icon Styles */
+lord-icon {
+  color: #ffffff;
+  background: blue;
+}
+
+/* Media Query for Responsive Design */
+@media (max-width: 768px) {
+  .web-dev {
+    flex: 1 1 100%;
+    height: 25vh;
+    margin-bottom: 20px;
+  }
+}

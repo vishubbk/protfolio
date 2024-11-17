@@ -136,6 +136,9 @@
   
   /* Responsive styling for smaller screens */
   @media (max-width: 768px) {
+    .contact-section{
+      margin-top: 11vh;
+    }
     .contact-section h2 {
       font-size: 2rem;
     }

@@ -1,0 +1,98 @@
+.header {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 3%;
+    width: 100vw;
+    height: 11vh;
+    z-index: 1;
+   
+  }
+  
+  .shadow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100%;
+    background: rgba(208, 187, 187, 0.4);
+    opacity: 0.9;
+    z-index: -1;
+  }
+  
+  .logo {
+    display: flex;
+    font-size: larger;
+  }
+  
+  .first {
+    color: rgb(98, 224, 35);
+  }
+  
+  .second {
+    color: #ffffff;
+  }
+  
+  .options {
+    display: flex;
+    gap: 15px;
+    color: #d5d21b;
+    font-weight: bold;
+    transition: all 0.5s ease;
+ 
+  }
+  
+  .hamburger {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  .hamburger span {
+    width: 25px;
+    height: 3px;
+    background: white;
+  }
+  
+  /* Full Screen Behavior */
+  @media (min-width: 769px) {
+    .options {
+      position: static;
+      flex-direction: row;
+      height: auto;
+      background: none;
+      visibility: visible;
+    }
+  }
+  
+  /* Small Screens Behavior */
+  @media (max-width: 768px) {
+    .container
+    {
+        margin-top: 11vh;
+    }
+    .options {
+      position: fixed;
+      top: 0;
+      left: -100%; /* Initially hidden */
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 60%; /* Menu width */
+      height: 100vh;
+      background-color: rgb(5, 6, 4);
+      z-index: 2;
+    }
+  
+    .options.visible {
+      left: 0; /* Slide in from the right */
+    }
+  
+    .hamburger {
+      display: flex;
+      z-index: 3; /* Ensure it's above the menu */
+    }
+  }
+  

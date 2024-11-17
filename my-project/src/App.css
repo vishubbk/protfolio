@@ -43,72 +43,6 @@ body {
   font-family: Arial, sans-serif;
 }
 
-.header {
-  position: fixed;
-  background-image: url(components/pexels-johnnymckane-295058.jpg);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 3%;
-  width: 100vw;
-  height: 11vh;
-  z-index: 1;
-}
-
-.shadow {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.4);
-  opacity: 0.4;
-  z-index: -1;
-}
-
-.options {
-  display: flex;
-  color: #d5d21b;
-  font-weight: bold;
-  gap: 10px;
-}
-
-.logo {
-  display: flex;
-  font-size: larger;
-}
-
-.first {
-  color: rgb(98, 224, 35);
-}
-
-.second {
-  color: #ffffff;
-}
-
-@media (max-width: 768px) {
-  .header {
-    flex-direction: column;
-    height: auto;
-  }
-
-  .logo {
-    font-size: medium;
-  }
-
-  .welcome,
-  .works {
-    font-size: 6vw;
-    padding: 20px 0;
-  }
-
-  .buttons {
-    flex-direction: column;
-    gap: 10px;
-  }
-}
-
-
 
 .container {
   background: url(components/vishu.jpg);
@@ -204,6 +138,12 @@ body {
 }
 
 @media (max-width: 768px) {
+  .container{
+    height: 89vh;
+  }
+  .black{
+    height: 89vh;
+  }
   .welcome,
   .works {
     flex-direction: column;

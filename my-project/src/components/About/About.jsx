@@ -31,7 +31,7 @@ const About = () => {
 
 
       <div className="boxes-main">
-        <div className="boxes-text">he;llo txus</div>
+        <div className="boxes-text"></div>
         <div className="boxes">
           
         {            /* box-1 */                }
@@ -47,7 +47,8 @@ const About = () => {
 
 <div className="boxes-inner-text">
   <div className="h2">Top-coders</div>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing.</p></div>
+<p>
+Top Coders in Programming History:</p></div>
 
             </div>
           </a>
@@ -66,8 +67,8 @@ const About = () => {
 </lord-icon>
 
 <div className="boxes-inner-text">
-  <div className="h2">Top-coders</div>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing.</p></div>
+  <div className="h2">Top-languages</div>
+<p>Top Programming Languages for Development:</p></div>
 
         </div>
         </a>
@@ -87,8 +88,8 @@ const About = () => {
 </lord-icon>
 
 <div className="boxes-inner-text">
-  <div className="h2">Top-coders</div>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+  <div className="h2">Top-Youtubers</div>
+<p>Top Indian best Coding YouTubers :</p>
 </div>
           </div>
         </a>
@@ -142,6 +143,7 @@ const About = () => {
             </div>
           </a>
         </div>
+        
         <div className="web-dev">
           <a href="#">
             <div className="headings">
@@ -217,8 +219,8 @@ const About = () => {
         </div>
 
       </div>
-
-      <Popular />
+      <div className="boxes-text"></div>
+      <Popular/>
     </div>
   );
 };
